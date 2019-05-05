@@ -1,8 +1,14 @@
-function injectScript(file, node) {
-    var th = document.getElementsByTagName(node)[0];
-    var s = document.createElement('script');
-    s.setAttribute('type', 'text/javascript');
-    s.setAttribute('src', file);
-    th.appendChild(s);
+function injectScript() {
+    var id = window.setTimeout(function() {}, 0);
+
+    while (id--) {
+        window.clearTimeout(id); // will do nothing if no timeout with id is present
+    }
+
+    ttlChecked=true;
+    document.getElementsByClassName('contenido-exclusivo-nota')[0].remove();
+    document.getElementsByClassName('content-modules')[0].style.display = "block";
+
 }
-injectScript( chrome.extension.getURL('/js/fancybox-deletter.js'), 'body');
+
+injectScript();
