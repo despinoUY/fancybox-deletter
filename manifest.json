@@ -2,7 +2,7 @@
   // Required
   "manifest_version": 2,
   "name": "EPD Fancybox deletter",
-  "version": "0.4",
+  "version": "0.6",
 
   // Recommended
   "description": "Una extensión que elimina el tedioso clicktrapper de El País (Uruguay).",
@@ -54,6 +54,26 @@
     {
       "matches": ["https://www.ovaciondigital.com.uy/*/*"],
       "js": ["js/contentScript.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://www.elobservador.com.uy/*/*"],
+      "js": ["js/elobservador-login-deletter.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://www.referi.com.uy/*/*"],
+      "js": ["js/elobservador-login-deletter.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://www.elobservador.com.uy/*/*"],
+      "js": ["js/elobservador-login-deletter.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://www.referi.com.uy/*/*"],
+      "js": ["js/elobservador-login-deletter.js"],
       "run_at": "document_end"
     }
   ],

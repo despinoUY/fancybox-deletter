@@ -1,3 +1,2 @@
-if (!localStorage.getItem('CMSFrontendIdUsuario')){
-  localStorage.setItem('CMSFrontendIdUsuario','0');
-}
+console.log('hola');
+document.getElementById('desktop').setAttribute('data-tipo_de_nota','free');
