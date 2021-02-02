@@ -6,6 +6,7 @@ function injectScript() {
     }
 
     ttlChecked=true;
+    statusUser.logged_in=true;
     document.getElementsByClassName('contenido-exclusivo-nota')[0].remove();
     document.getElementsByClassName('content-modules')[0].style.display = "block";
 
